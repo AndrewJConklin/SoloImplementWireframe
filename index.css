@@ -66,12 +66,6 @@ header {
     }
 }
 
-@media (max-width:550px) {
-    .lower nav{
-        display: none;
-    }
-}
-
 h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 36px;
@@ -94,6 +88,30 @@ header a:clicked {
 
 header li + li {
     margin-left: 24px;
+}
+
+@media (max-width:550px) {
+    .lower nav {
+        position: absolute;
+        top:-200px;
+        right: 0;
+    }
+
+    ul {
+        flex-direction: column;
+        background-color: dimgrey;
+        margin: 12px 12px;
+        padding: 12px 12px;
+    }
+
+    ul li + li {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+
+    .mainnav a{
+        margin-left: 0;
+    }
 }
 
 #hero {
