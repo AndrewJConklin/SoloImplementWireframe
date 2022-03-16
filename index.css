@@ -174,7 +174,7 @@ main {
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px 300px 300px;
+        grid-template-rows: 100px 1fr 1fr;
         padding: 0px 25px;
         width: 100%;
     }
@@ -263,9 +263,14 @@ main h3 {
 }
 
 .features p{
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
+@media (max-width:1050px) {
+    .features p {
+        margin-bottom: 12px;
+    }
+}
 
 .features a{
     color: white;
@@ -284,9 +289,8 @@ main h3 {
 @media (max-width:1050px) {
     .features a {
         border: 2px solid white;
-        padding: 6px 10px;
         font-size: 10px;
-        width: 40%;
+        width: 50%;
     }
 }
 
