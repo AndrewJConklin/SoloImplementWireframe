@@ -60,11 +60,9 @@ header {
     }
 }
 
-@media (min-width:551px) {
-    #bars {
-        display: none;
-    }
-}
+/* menu {
+    display: none;
+} */
 
 h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -91,10 +89,29 @@ header li + li {
 }
 
 @media (max-width:550px) {
+    .lower  h1 {
+        font-size: 24px;
+    }
+    
+    .lower nav {
+        font-size: 12px;
+    }
+
+    .lower li {
+        margin-left: 12px;
+    }
+}
+
+/* @media (max-width:550px) {
     .lower nav {
         position: absolute;
         top:-200px;
         right: 0;
+    }
+
+    menu {
+    display: block;
+    cursor: pointer;
     }
 
     ul {
@@ -112,7 +129,7 @@ header li + li {
     .mainnav a{
         margin-left: 0;
     }
-}
+} */
 
 #hero {
     position: relative;
