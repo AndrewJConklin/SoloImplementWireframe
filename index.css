@@ -79,7 +79,7 @@ header li + li {
 
 #hero img {
     width: 100%;
-    max-width: 1800px;
+    max-height: 1000px;
 }
 
 #tag-line {
